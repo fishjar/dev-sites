@@ -1,0 +1,334 @@
+/*
+Theme Name: FishJar
+Theme URI: http://www.fishjar.com/
+Description: This WordPress theme based on the <a href="http://www.fishjar.com/">FishJar</a>.
+Version: 2.3
+Author: Gaby Yuan
+Author URI: http://www.fishjar.com/
+Tags: simple
+
+*/
+/*ADS*/
+#conash3D0 {
+	display: none;
+}
+/* reset */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li, pre, code, div,
+form, fieldset, legend, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+}
+body, button, input, select, textarea {
+	font: 12px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; 
+	color: #333;
+}
+code, kbd, pre, samp {
+	font-family: courier new, courier, monospace;
+}
+ul, ol {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: bold;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 160%;
+}
+h3 {
+	font-size: 130%;
+}
+a {
+	text-decoration: none;
+	color: #36C;
+}
+a:hover {
+	color: #D54221;
+}
+fieldset, img {
+	border: 0;
+}
+button, input, select, textarea {
+	font-size: 100%;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	zoom: 1;
+}
+/* globe */
+#wrapper {
+	width: 90%;
+	min-width: 480px;
+	margin: 0 auto;
+}
+#container {
+	padding: 1em 0.2em;
+}
+h2 {
+	padding-top: 0.5em;
+}
+.post {
+	margin-bottom: 1em;
+	border-bottom: 1px dotted #CCC;
+}
+/* header */
+#hd-menu {
+	padding: 0.2em 0 3em;
+	text-align: right;
+}
+#hd-menu li {
+	display: inline;
+	padding-left: 1%;
+}
+h1 {
+	display: inline;
+}
+#hd-title .subhead {
+	font-size: 115%;
+	display: inline;
+	padding-top: 0.8em;
+	padding-left: 1%;
+	color: #666;
+}
+#hd-search {
+	float: right;
+	padding-top: 0.9em;
+}
+#hd-search input {
+	padding: 0.1em 0.2em;
+	border: 1px solid #DDD;
+	width: 10em;
+}
+#hd-title {
+	padding-bottom: 0.5em;
+}
+#hd-navigation {
+	background: #E5ECF9;
+	border-top: 1px solid #36C;
+	padding: 0.3em;
+}
+.nav-btns {
+	float: right;
+}
+.feed-link {
+	width: 16px;
+	height: 16px;
+	display: block;
+	background: url(images/feed-icon-16-rss.png) no-repeat 0 0;
+	text-indent: -100px;
+	overflow: hidden;
+}
+.feed-link:hover {
+	background-position: 0 -16px;
+}
+#hd-navigation li {
+	display: inline;
+	padding-right: 1%;
+}
+#hd-navigation li a {
+	font-size: 120%;
+	padding: 0 0.5%;
+}
+#hd-navigation li.active a {
+	color: #D54221;
+}
+/* sider */
+#sider {
+	width: 200px;
+	float: right;
+	padding-left: 1em;
+}
+#sider li {
+	border-color: #D8EDC3 #E5ECF9 #E5ECF9;
+	border-width: 5px 1px 1px;
+	border-style: solid;
+	padding: 9px;
+	margin-bottom: 1em;
+}
+#sider li li {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+#sider audio {
+	width: 200px;
+	height: 32px;
+	margin-bottom: 1em;
+}
+#sider iframe {
+	margin-bottom: 1em;
+}
+/* footer */
+#footer {
+	border-top: 1px solid #36C;
+	margin: 1em 0;
+	padding: 1em 0;
+	text-align: center;
+	color: #666;
+}
+#ft-menu li {
+	display: inline;
+	padding-left: 1%;
+}
+#back-top {
+	margin-top: 100%;
+	text-align: right;
+}
+/* entry */
+.entry {
+	padding: 1em 0;
+}
+.entry p,
+.entry ul,
+.entry ol,
+.entry table,
+.entry pre,
+.entry blockquote {
+	margin-bottom: 1em;
+}
+.entry ul {
+	padding-left: 3em;
+	list-style-type: disc;
+}
+.entry ol {
+	padding-left: 3em;
+	list-style-type: decimal;
+}
+.entry pre {
+	padding: 0.5em 1em;
+	background: #FAFAFA;
+	overflow: auto;
+	border: 1px solid #DDD;
+}
+.entry blockquote {
+	border-left: 0.5em solid #DDD;
+	padding: 0.5em 1em;
+	margin-left: 1.5em;
+	background: #FAFAFA;
+}
+.entry table {
+	border-collapse: collapse;
+}
+.entry th,
+.entry td {
+	padding: 0.3em 0.5em;
+	border: 1px solid #DDD;
+}
+.entry th {
+	background: #FAFAFA;
+}
+/* buttons */
+#sider-btns {
+	position: fixed;
+	right: 10px;
+	top: 30%;
+}
+#sider-btns li {
+	padding-bottom: 5px;
+}
+#sider-btns a {
+	width: 14px;
+	height: 14px;
+	display: block;
+	text-align: center;
+	line-height: 14px;
+	overflow: hidden;
+	border: 1px solid #36C;
+	font-weight: bold;
+}
+/* comments */
+#comments h3 {
+	margin-bottom: 1em;
+}
+#comments p {
+	margin-bottom: 1em;
+}
+#commentform input,
+#commentform textarea {
+	padding: 0.1em  0.2em;
+	border: 1px solid #DDD;
+}
+#commentform input {
+
+}
+#commentform textarea {
+	width: 80%;
+	height: 5em;
+}
+#commentform label {
+	padding-left: 1em;
+}
+#submit {
+	cursor: pointer;
+}
+/* special */
+.mylinks fieldset {
+	padding: 1em;
+	margin-bottom: 1em;
+	border: 1px solid #DDD;
+}
+.mylinks legend {
+	margin-left: 0.5em;
+}
+.mylinks ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.mylinks li {
+	display: inline-block;
+	width: 8em;
+	line-height: 2em;
+}
+
+#sider .album-list {
+	font-size: 0;
+	text-align: justify;
+}
+#sider .album-list li {
+	line-height: 1em;
+	display: inline-block;
+	margin-top: 3px;
+}
+#sider .album-list li a,
+#sider .album-list li a img {
+	display: block;
+}
+#sider .album-list li a img {
+	padding: 1px;
+	border: 1px solid #E5ECF9;
+}
+#sider .album-list li a:hover img {
+	border: 1px solid #36C;
+}
+
+#sider .track-list li {
+	clear: both;
+	padding: 1px 0;
+}
+#sider .track-img {
+	float: left;
+	padding-top: 2px;
+}
+#sider .track-name {
+	padding-left: 40px;
+}
+#sider .link-more {
+	text-align: right;
+}
+
+

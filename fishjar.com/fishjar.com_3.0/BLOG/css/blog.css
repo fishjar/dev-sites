@@ -1,0 +1,110 @@
+/*////////////////////////*/
+/*   by Gaby  2012.2.15   */
+/*////////////////////////*/
+
+/**************************************
+common styles
+**************************************/
+/* global */
+body { font-size: 12px; color: #333; font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif,"Microsoft YaHei","微软雅黑";}
+h1,h2,h3,h4,h5,h6,strong { font-weight: bold; }
+ul{ list-style:none; margin:0px; padding:0px;}
+ul li{ margin:0px; padding:0px;}
+a { text-decoration: none; color: #36C; }
+a:hover { color: #D54221; }
+/* custom libs */
+.bt {background:transparent;}
+.bn { border: none; }
+.cf:before, .cf:after { content: "."; display: block; height: 0; overflow: hidden; }
+.cf:after {clear: both;}
+.cf {*zoom: 1;} /* IE < 8 */
+.cb { clear: both;}
+.cb0 { clear: both; font-size: 0; line-height: 0; }
+.cr { clear: right; }
+.cl { clear: left; }
+.cp { cursor: pointer; }
+.cd { cursor: default; }
+.dn { display: none; }
+.db { display: block; }
+.di { display: inline; }
+.dib { display: inline-block; *display: inline; *zoom: 1; }
+.dt { display: table; }
+.dtc { display: table-cell; }
+.fn { float: none; }
+.fs0 { font-size: 0; }
+.fr { float: right; }
+.fl { float: left; }
+.fwn { font-weight: normal; }
+.fwb { font-weight: bold; }
+.lh0 { line-height: 0; }
+.ma { margin: 0 auto; }
+.oh { overflow: hidden; }
+.ps { position: static; }
+.pa { position: absolute; }
+.pr { position: relative; }
+.pf { position: fixed; }
+.tc { text-align: center; }
+.tr { text-align: right; }
+.tl { text-align: left; }
+.ti { text-indent: -9999px; overflow: hidden; }
+.vm { vertical-align: middle; }
+.vt { vertical-align: top; }
+.vb { vertical-align: bottom; }
+
+/* other styles*/
+
+/**************************************
+structure styles
+**************************************/
+.wrap {width:80%;min-width:680px;}
+	.main, .side {padding: 10px 0;}
+	.main {margin-right: 210px;}
+	.side {width:200px;}
+	.foot {text-align:center;border-top:1px solid #36C;padding:10px 0 20px;}
+
+/**************************************
+module styles
+**************************************/
+/* head */
+.titles {padding:50px 0 10px;}
+	.titles .title {font-size:24px;text-transform:uppercase;}
+	.titles .subtitle {font-size:14px;color:#666;padding-left:20px;}
+.links {right:0;top:5px;}
+	.links li {float:left;padding-left:10px;}
+.search {right:0;bottom:10px;padding: 2px 2px 2px 4px;height:16px;width:120px;border:1px solid #CCC;border-radius:5px;}
+	.search .search-field {width:100px;height:16px;line-height:16px;color:#999;}
+	.search .search-btn {width:15px;height:15px;background:url(../images/searchGlass.jpg) no-repeat;}
+
+/* nav */
+.nav {height:24px;background:#E5ECF9;border-top:1px solid #36C;}
+	.nav li {float:left;}
+	.nav li a {float:left;height:24px;line-height:24px;padding:0 10px;font-family:Georgia;font-size:14px;text-transform:uppercase;}
+	.nav li a.active,
+	.nav li a:hover {background:#BCF;}
+.feed {width:16px;height:16px;margin: 4px 5px 0 0;background:url(../images/feed-icon-16-rss.png) no-repeat 0 0;}
+.feed:hover {background-position: 0 -16px;}
+
+/* boxs */
+.boxs {}
+	.box {padding:9px;border-color: #D8EDC3 #E5ECF9 #E5ECF9;border-style:solid;border-width:5px 1px 1px; margin-bottom:10px;line-height:1.5em;}
+	.box h3 {font-size:16px;margin-bottom:5px;font-family:Georgia;text-transform:uppercase;}
+
+/* post */
+.post {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #E5ECF9;}
+	.post h2 {font-size:20px;}
+	.meta {color:#666;}
+.entry {padding:10px 0;line-height:1.5em;}
+	.entry p, .entry ul, .entry pre, .entry code, .entry fieldset {margin-bottom:0.75em;}
+	.entry ul {list-style: disc outside; margin-left: 2em;}
+	.entry fieldset {padding:1em;border:1px solid #E5ECF9;}
+	
+/* foot */
+.power li {display:inline; padding: 0 10px;}
+	
+/**************************************
+other styles
+**************************************/
+
+
+
+

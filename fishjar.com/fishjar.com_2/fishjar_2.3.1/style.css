@@ -1,0 +1,518 @@
+/*
+Theme Name: FishJar
+Theme URI: http://www.fishjar.com/
+Description: This WordPress theme based on the <a href="http://www.fishjar.com/">FishJar</a>.
+Version: 2.3
+Author: Gaby Yuan
+Author URI: http://www.fishjar.com/
+Tags: simple
+
+*/
+/*ADS*/
+#conash3D0 {
+	display: none;
+}
+/* reset */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li, pre, code, div,
+form, fieldset, legend, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+}
+body, button, input, select, textarea {
+	font: 12px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; 
+	color: #333;
+}
+code, kbd, pre, samp {
+	font-family: courier new, courier, monospace;
+}
+ul, ol {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: bold;
+}
+h1 {
+	font-size: 200%;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 160%;
+}
+h3 {
+	font-size: 130%;
+}
+a {
+	text-decoration: none;
+	color: #36C;
+}
+a:hover {
+	color: #D54221;
+}
+fieldset, img {
+	border: 0;
+}
+button, input, select, textarea {
+	font-size: 100%;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	zoom: 1;
+}
+/* globe */
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	background: #FFF no-repeat fixed  center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+}
+#wrapper_bg {
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+* html #wrapper_bg {
+	position: absolute;
+	bottom: auto;
+	top: expression(eval(document.documentElement.scrollTop));
+}
+#wrapper {
+	width: 90%;
+	min-width: 480px;
+	margin: 0 auto;
+	overflow: auto;
+}
+#container {
+	padding: 10px 0 20px;
+	background: #FFF;
+}
+.post {
+	margin-bottom: 1.5em;
+	padding: 0.5em 0;
+	border-bottom: 1px solid #E5ECF9;
+	overflow: hidden;
+}
+/* header */
+#header {
+
+}
+#hd-menu {
+	padding: 0.2em 0 3em;
+}
+#hd-menu-list {
+	float: right;
+}
+#hd-menu li {
+	display: inline;
+	padding-left: 1em;
+}
+h1 {
+	display: inline;
+}
+#hd-title .subhead {
+	font-size: 115%;
+	display: inline;
+	padding-top: 0.8em;
+	padding-left: 1%;
+	color: #666;
+}
+#hd-search {
+	float: right;
+	padding-top: 0.9em;
+}
+#hd-search input {
+	padding: 0.1em 0.2em;
+	border: 1px solid #E5ECF9;
+	width: 10em;
+	color: #999;
+}
+#hd-search input.active {
+	color: #333;
+}
+#hd-search .searchsubmit {
+	display: none;
+}
+#hd-title {
+	padding-bottom: 0.5em;
+}
+#hd-navigation {
+	background: #E5ECF9;
+	border-top: 1px solid #36C;
+}
+.nav-btns {
+	float: right;
+	padding-right: 5px;
+	padding-top: 4px;
+}
+.feed-link {
+	width: 16px;
+	height: 16px;
+	display: block;
+	background: url(images/feed-icon-16-rss.png) no-repeat 0 0;
+	text-indent: -100px;
+	overflow: hidden;
+}
+.feed-link:hover {
+	background-position: 0 -16px;
+}
+#hd-navigation iframe {
+	float: right;
+}
+#hd-navigation ul {
+	font-size: 0;
+}
+#hd-navigation li {
+	display: inline-block;
+	font-size: 14px;
+	*display: inline;
+	*zoom: 1;
+}
+#hd-navigation li a {
+	display: inline-block;
+	line-height: 1.8em;
+	height: 1.8em;
+	padding: 0 0.8em;
+	font-family: Georgia;
+	text-transform: uppercase;
+}
+#hd-navigation li a:hover,
+#hd-navigation li.current_page_item a {
+	background: #BCF;
+}
+/* sider */
+#sider {
+	float: right;
+	width: 210px;
+}
+#sider h3 {
+	font-family: Georgia;
+	text-transform: uppercase;
+}
+#sider .sider_top,
+#sider .sider_left,
+#sider .sider_right {
+	padding-left: 10px;
+}
+#sider .sider_left,
+#sider .sider_right {
+	width: 200px;
+}
+#sider .sider_top,
+#sider .sider_right {
+	display: none;
+}
+#sider .sider_left {
+	float: left;
+}
+#sider .sider_right {
+	float: right;
+}
+#sider .box {
+	border-color: #D8EDC3 #E5ECF9 #E5ECF9;
+	border-width: 5px 1px 1px;
+	border-style: solid;
+	padding: 9px;
+	margin-bottom: 10px;
+}
+#sider .box_noborder {
+	border: none;
+	padding: 0;
+}
+
+/* #sider-top {
+	padding-left: 10px;
+}
+#sider-one,
+#sider-two {
+	width: 200px;
+	padding-left: 10px;
+}
+#sider-one {
+	display: none;
+	float: right;
+}
+#sider-two {
+	float: left;
+}
+#sider h3 {
+	font-family: Georgia;
+	text-transform: uppercase;
+}
+#sider li {
+	border-color: #D8EDC3 #E5ECF9 #E5ECF9;
+	border-width: 5px 1px 1px;
+	border-style: solid;
+	padding: 9px;
+	margin-bottom: 10px;
+}
+#sider li li {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+#sider audio {
+	width: 200px;
+	height: 32px;
+	margin-bottom: 1em;
+} */
+#sider .thumbnail-list {
+	font-size: 0;
+	text-align: justify;
+}
+#sider .thumbnail-list li {
+	line-height: 1em;
+	display: inline-block;
+	font-size: 12px;
+	*display: inline;
+	*zoom: 1;
+}
+#sider .thumbnail-list li a,
+#sider .thumbnail-list li a img {
+	display: block;
+}
+#sider .thumbnail-list li a img {
+	padding: 1px;
+	border: 1px solid #E5ECF9;
+	width: 56px;
+	height: 56px;
+	overflow: hidden;
+}
+#sider .thumbnail-list li a:hover img {
+	border: 1px solid #36C;
+}
+#sider .twitter-list li {
+	padding-bottom: 0.5em;
+}
+#sider .track-list li {
+	clear: both;
+	padding: 1px 0;
+}
+#sider .track-img,
+#sider .track-img img {
+	display: block;
+}
+#sider .track-img {
+	float: left;
+}
+#sider .track-img img {
+	width: 34px;
+	height: 34px;
+	overflow: hidden;
+	border: 1px solid #E5ECF9;
+}
+#sider .track-name {
+	padding-left: 40px;
+}
+#sider .track-img:hover img {
+	border: 1px solid #36C;
+}
+#sider .link-more {
+	text-align: right;
+}
+/* footer */
+#footer {
+	border-top: 1px solid #36C;
+	padding: 1em 0 2em;
+	text-align: center;
+	color: #666;
+}
+#ft-menu li {
+	display: inline;
+	padding-left: 1%;
+}
+#back-top {
+	margin-top: 100%;
+}
+#back-top .btn-go-top {
+	background: #FFF;
+}
+/* entry */
+.entry {
+	padding: 1em 0;
+}
+.entry p,
+.entry ul,
+.entry ol,
+.entry table,
+.entry pre,
+.entry blockquote {
+	margin-bottom: 1em;
+}
+.entry ul {
+	padding-left: 3em;
+	list-style-type: disc;
+}
+.entry ol {
+	padding-left: 3em;
+	list-style-type: decimal;
+}
+.entry pre {
+	padding: 0.5em 1em;
+	background: #FAFAFA;
+	overflow: auto;
+	border: 1px solid #E5ECF9;
+}
+.entry blockquote {
+	border-left: 0.5em solid #E5ECF9;
+	padding: 0.5em 1em;
+	margin-left: 1.5em;
+	background: #FAFAFA;
+}
+.entry table {
+	border-collapse: collapse;
+}
+.entry th,
+.entry td {
+	padding: 0.3em 0.5em;
+	border: 1px solid #DDD;
+}
+.entry th {
+	background: #FAFAFA;
+}
+.entry fieldset {
+	padding: 1em;
+	margin-bottom: 1em;
+	border: 1px solid #E5ECF9;
+}
+.entry legend {
+	margin-left: 0.5em;
+}
+/* buttons */
+#sider-btns {
+	position: fixed;
+	right: 10px;
+	top: 30%;
+	z-index: 2;
+}
+* html #sider-btns {
+	position: absolute;
+	bottom: auto;
+	top: expression(eval(document.documentElement.scrollTop));
+}
+#sider-btns a {
+	width: 14px;
+	height: 14px;
+	display: block;
+	text-align: center;
+	line-height: 14px;
+	overflow: hidden;
+	border: 1px solid #36C;
+	background: #FFF;
+	margin-bottom: 5px;
+}
+#sider-btns a:hover {
+	color: #FFF;
+	background: #36C;
+}
+/* comments */
+#comments {
+	overflow: hidden;
+}
+#comments h3 {
+	margin-bottom: 1em;
+}
+#comments p {
+	margin-bottom: 1em;
+}
+#comments .commentlist p {
+	margin: 0;
+}
+#commentform input,
+#commentform textarea {
+	padding: 0.1em  0.2em;
+	border: 1px solid #E5ECF9;
+}
+#commentform textarea {
+	width: 90%;
+	height: 5em;
+}
+#commentform label {
+	padding-left: 1em;
+}
+#submit {
+	cursor: pointer;
+}
+.form-submit input {
+	background: #E5ECF9;
+	color: #36C;
+}
+.commentlist .comment,
+.commentlist .trackback {
+	padding: 0.5em;
+	border: 1px solid #E5ECF9;
+	margin-bottom: 1em;
+}
+.commentmetadata a {
+	font-size: 90%;
+}
+.comment-author .photo {
+	float: right;
+}
+.comment-author a,
+.comment-author cite {
+	font-weight: bold;
+}
+input.hover,
+textarea.hover {
+	background: #FFC;
+}
+.form-submit input.hover {
+	background: #36C;
+	color: #FFF;
+}
+input.active,
+textarea.active {
+	background: #FF9;
+}
+/* special */
+.twitter_loading {
+	text-align: center;
+}
+.twitter_follow {
+	text-align: right;
+}
+.mylinks {
+	text-align: justify;
+}
+.mylinks ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+.mylinks li {
+	width: 8em;
+	line-height: 2em;
+	text-align: center;
+	font-size: 12px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.required {
+	color: red;
+}
+.wp-pagenavi {
+	text-align: right;
+	padding-bottom: 1em;
+}
+
+

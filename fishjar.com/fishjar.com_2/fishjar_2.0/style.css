@@ -1,0 +1,303 @@
+@charset "utf-8";
+/*
+Theme Name: FishJar
+Theme URI: http://www.fishjar.com/
+Description: This WordPress theme based on the <a href="http://www.fishjar.com/">FishJar</a>.
+Version: 2.0
+Author: Gaby Yuan
+Author URI: http://www.fishjar.com/
+Tags: simple
+
+
+*/
+/*ADS*/
+#conash3D0 {
+	display: none;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, form, embed, object, applet {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 12px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	background-color: #fff;
+	color: #333;
+}
+h1 { font-size: 24px;}
+h2 { font-size: 20px;}
+h3 { font-size: 16px;}
+h4 { font-size: 15px;}
+h5 { font-size: 14px;}
+h6 { font-size: 12px;}
+a {
+	color: #36C;
+	text-decoration: none;
+}
+a:hover {
+	color: #D54121;
+}
+.current_page_item a {
+	text-decoration: underline;
+	color: #D54121;
+}
+p, ul, ol, li, fieldset {
+	margin: 1em 0;
+}
+ol, ul {
+	padding-left: 3em;
+}
+pre {
+	overflow: auto;
+	border: 1px solid #ddd;
+	padding: 0.5em;
+	background: #FAFAFA;
+	width: 97%;
+}
+blockquote {
+	margin: 1em 2.5em 1em 1.5em;
+	padding-left: 1em;
+	border-left: 5px solid #D8EDC3;
+}
+pre, blockquote {
+	color: #777;
+}
+.post fieldset {
+	-moz-border-radius: 5px;
+	padding: 1em;
+	border: 1px solid #ddd;
+}
+.post legend {
+	margin-left: 0.5em;
+}
+.clearer {
+	clear: both;
+	font-size: 0;
+}
+p.post-img img {
+	padding: 5px;
+	border: 1px solid #D8EDC3;
+	background: #FAFAFA;
+}
+#wrapper {
+	margin: 0 auto;
+	width: 70%;
+	min-width: 720px;
+	max-width: 960px;
+	overflow: hidden;
+}
+#header {
+	margin-top: 0.2em;
+}
+#hd-menu {
+	text-align: right;
+}
+#hd-search {
+	float: right;
+}
+#hd-search input {
+	-moz-border-radius: 3px;
+	border: 1px solid #ddd;
+	margin-top: 10px;
+	padding: 1px 2px;
+	width: 100px;
+	color: #999;
+}
+#hd-title {
+	padding-top: 30px;
+}
+#hd-title h1 {
+	float: left;
+}
+#hd-title h5 {
+	float: left;
+	margin-top: 12px;
+	margin-left: 1em;
+	color: #999;
+	font-weight: normal;
+}
+#hd-nav {
+	background: #E5ECF9;
+	border-top: 1px solid #3366CC;
+	clear: both;
+}
+#hd-nav ul {
+	margin: 0;
+	padding: 0.3em 0;
+	list-style: none outside none;
+}
+#hd-nav ul li {
+	display: inline;
+	margin: 0;
+	padding: 0 0.5em;
+}
+#hd-nav ul li a {
+	padding: 0 0.5em;
+	font-size: 14px;
+}
+
+#container {
+	padding: 1em 5px;
+}
+#content {
+	margin-right: 240px;
+	padding: 0 5px;
+}
+#sidebar {
+	float: right;
+	width: 220px;
+}
+a.gaby {
+	height: 50px;
+	width: 50px;
+	display: block;
+	clear: both;
+	text-indent: -999px;
+	background: url("images/gaby-index.jpg") no-repeat scroll center bottom transparent;
+	margin: 0.5em 0;
+}
+a:hover.gaby {
+	background: url("images/gaby-index.jpg") no-repeat scroll center top transparent;
+}
+#sidebar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#sidebar li {
+	margin: 0;
+}
+.side-box {
+	border: 1px solid #E5ECF9;
+	border-top: 5px solid #D8EDC3;
+	margin-bottom: 1em;
+	padding: 9px;
+}
+.side-col {
+	padding: 0 10px;
+	margin-bottom: 1em;
+}
+
+#footer {
+	margin: 1em 0;
+	border-top: 1px solid #3366CC;
+	text-align: center;
+	color: #888;
+}
+#footer a {
+	color: #888;
+}
+#footer a:hover {
+	text-decoration: underline;
+}
+#ft-menu {
+	padding-top: 1em;
+}
+#ft-copyright {
+	margin-top: 5px;
+}
+
+.post {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #ccc;
+}
+.entry {
+	margin-top: 1em;
+}
+p.postmetadata {
+	text-align: right;
+	color: #888;
+	margin-bottom: 0;
+}
+.meta {
+	color: #888;
+}
+.navigation {
+	height: 3em;
+	display: block;
+}
+.navigation .alignleft {
+	float: left;
+}
+.navigation .alignright {
+	float: right;
+}
+#respond textarea {
+	width: 96%;
+}
+.commentlist li .avatar {
+	background: #fff;
+	border: 1px solid #EEE;
+	float: right;
+	padding: 2px;
+}
+.comment-author {
+	font-weight: bold;
+	font-style: normal;
+}
+.depth-1 {
+	border: 1px solid #DDD;
+	padding: 5px;
+}
+.thread-alt {
+	background: #FAFAFA;
+}
+.commentlist {
+	text-align: justify;
+	padding: 0;
+}
+.commentlist li {
+	list-style-type: none;
+}
+#twitter_update_list {
+	padding-left: 1.5em !important;
+}
+
+.mylinks ul {
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: center;
+	clear: both;
+}
+.mylinks ul li {
+	margin: 0 !important;
+	padding: 0.5em 0 !important;
+	list-style-type: none;
+	float: left;
+	width: 8em;
+	display: block;
+	overflow: hidden;
+}
+.reader-publisher-module li, #recent_on_last_fm_itm_list li {
+	/*margin: 0.5em 0 !important; */
+}
+.reader-publisher-module li div, #recent_on_last_fm_itm_list li span {
+	color: #888;
+}
+.f {
+	text-align: right;
+}
+.wp-pagenavi {
+	text-align: right;
+	margin-bottom: 1em;
+}
+.feedicon {
+	height: 16px;
+	width: 16px;
+	display: block;
+	margin: 5px;
+	float: right;
+	background: url("images/feed-icon-16-rss.png") no-repeat scroll center top transparent;
+	text-indent: -999px;
+	font-size: 0;
+	overflow: hidden;
+}
+.feedicon:hover {
+	background: url("images/feed-icon-16-rss.png") no-repeat scroll center bottom transparent;
+}
+
+#creditfooter {
+	display: none;
+}

@@ -1,0 +1,147 @@
+/*////////////////////////*/
+/*   by Gaby  2012.2.15   */
+/*////////////////////////*/
+
+/**************************************
+common styles
+**************************************/
+/* global */
+body { font-size: 12px; color: #333; font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif,"Microsoft YaHei","微软雅黑";}
+h1,h2,h3,h4,h5,h6,strong { font-weight: bold; }
+ul{ list-style:none; margin:0px; padding:0px;}
+ul li{ margin:0px; padding:0px;}
+a { text-decoration: none; color: #36C; }
+a:hover { color: #D54221; }
+/* custom libs */
+.bt {background:transparent;}
+.bn { border: none; }
+.cf:before, .cf:after { content: "."; display: block; height: 0; overflow: hidden; }
+.cf:after {clear: both;}
+.cf {*zoom: 1;} /* IE < 8 */
+.cb { clear: both;}
+.cb0 { clear: both; font-size: 0; line-height: 0; }
+.cr { clear: right; }
+.cl { clear: left; }
+.cp { cursor: pointer; }
+.cd { cursor: default; }
+.dn { display: none; }
+.db { display: block; }
+.di { display: inline; }
+.dib { display: inline-block; *display: inline; *zoom: 1; }
+.dt { display: table; }
+.dtc { display: table-cell; }
+.fn { float: none; }
+.fs0 { font-size: 0; }
+.fr { float: right; }
+.fl { float: left; }
+.fwn { font-weight: normal; }
+.fwb { font-weight: bold; }
+.lh0 { line-height: 0; }
+.ma { margin: 0 auto; }
+.oh { overflow: hidden; }
+.ps { position: static; }
+.pa { position: absolute; }
+.pr { position: relative; }
+.pf { position: fixed; }
+.tc { text-align: center; }
+.tr { text-align: right; }
+.tl { text-align: left; }
+.ti { text-indent: -9999px; overflow: hidden; }
+.vm { vertical-align: middle; }
+.vt { vertical-align: top; }
+.vb { vertical-align: bottom; }
+
+/* other styles*/
+
+/**************************************
+structure styles
+**************************************/
+.wrap {width:80%;min-width:680px;max-width:980px;}
+	.main, .side {padding: 10px 0;}
+	.main {margin-right: 210px;}
+	.side {width:200px; margin-left:10px;}
+	.foot {text-align:center;border-top:1px solid #36C;padding:10px 0 20px;}
+
+/**************************************
+module styles
+**************************************/
+/* head */
+.titles {padding:50px 0 10px;}
+	.titles .title {font-size:24px;text-transform:uppercase;}
+	.titles .subtitle {font-size:14px;color:#999;padding-left:20px;}
+.links {right:0;top:5px;}
+	.links li {float:left;padding-left:10px;}
+.search {right:0;bottom:10px;padding: 2px 2px 2px 4px;height:16px;width:120px;border:1px solid #CCC;border-radius:5px;}
+	.search .search-field {width:100px;height:16px;line-height:16px;color:#999;}
+	.search .search-btn {width:15px;height:15px;background:url(../images/searchGlass.jpg) no-repeat;}
+
+/* nav */
+.nav {height:24px;background:#E5ECF9;border-top:1px solid #36C;}
+	.nav li {float:left;}
+	.nav li a {float:left;height:24px;line-height:24px;padding:0 10px;font-family:Georgia;font-size:14px;text-transform:uppercase;font-weight: bold;}
+	.nav li.current_page_item a, .nav li a:hover {background:#BCF;}
+.feed {width:16px;height:16px;margin: 4px 5px 0 0;background:url(../images/feed-icon-16-rss.png) no-repeat 0 0;}
+.feed:hover {background-position: 0 -16px;}
+
+/* boxs */
+.boxs {}
+	.box {padding:9px;border-color: #D8EDC3 #E5ECF9 #E5ECF9;border-style:solid;border-width:5px 1px 1px; margin-bottom:10px;line-height:1.5em;}
+	.box h3 {font-size:16px;margin-bottom:5px;font-family:Georgia;text-transform:uppercase;}
+
+/* post */
+.post {padding:10px 0;margin-bottom:10px;border-bottom:1px solid #36C;}
+	.post h2 {font-size:20px;}
+	.post h3 {font-size:16px;}
+	.meta {color:#666;}
+.entry {padding:10px 0;line-height:1.5em;}
+	.entry h3, .entry h4, .entry p, .entry ul, .entry pre, .entry code, .entry fieldset, .entry blockquote {margin-bottom:1em;}
+	.entry ul {list-style: disc outside; margin-left: 2em;}
+	.entry ul.years, .entry ul.months {list-style: none;}
+	.entry li {margin-bottom:0.5em;}
+	.entry fieldset {padding:1em;border:1px solid #E5ECF9;}
+	.entry blockquote {padding:0.5em 1em;border-left:5px solid #E5ECF9;}
+	.entry code,
+	.entry pre {padding:0.5em 1em;border:1px solid #E5ECF9;overflow:auto;}
+.archtitle {font-size:20px;margin-bottom:1em;}
+.nav-single {margin-bottom: 1em;}
+
+/* pagenavi */
+.wp-pagenavi {padding: 10px 0; margin-bottom: 10px;}
+	.wp-pagenavi a, .wp-pagenavi span {padding: 5px 8px; border: 1px solid #36C; margin-right: 5px; }
+	.wp-pagenavi a:hover {background: #BCF;}
+	.wp-pagenavi .current {background: #BCF; border-color: #BCF; }
+
+/* comments */
+.comments {padding:10px 0;margin-bottom:10px;border-bottom:1px solid #36C;}
+	.comments h3 {font-size: 14px; margin-bottom: 0.5em;}
+	.comments li { margin-bottom: 10px; margin-left: 10px; border-left: 1px #BCF solid; }
+	.comments li.depth-1 {margin-left: 0;}
+	.comments .comment-body {padding: 10px 10px 30px 10px; border-color: #BCF; border-style: solid; border-width: 1px 1px 1px 0; margin-bottom: 10px; position: relative; }
+	.comments .comment-body .reply a {position: absolute; left: 0; bottom: 0; padding: 0 5px; border-color: #BCF; border-style: solid; border-width: 1px 1px 0 0; background-color: #E5ECF9;}
+	.comments .comment-body .reply a:hover {background-color: #BCF;}
+	.comments .fn {font-weight: bold;}
+	.comments .comment-author {}
+	.comments .comment-author .avatar {float: right;}
+	.comments .comment-meta {margin-bottom: 10px; }
+		.comments li.depth-5 .reply a {display: none;}
+		.comments li.depth-5 .comment-body {padding-bottom: 1em;}
+	.comments .comment-respond {padding: 0 10px;}
+		.comments .required {color: #D54221; }
+		.comments .comment-navigation {margin-bottom: 1em; height: 20px; }
+		.comments .comment-respond p { margin-bottom: 1em; }
+		.comments .comment-respond input,
+		.comments .comment-respond textarea {border: 1px solid #BCF; padding: 2px;}
+		.comments .comment-respond textarea {display: block;}
+		.comments .comment-respond input#submit { padding: 2px 5px; cursor: pointer; color: #36C; background-color: #E5ECF9; }
+		.comments .comment-respond input#submit:hover {background-color: #BCF; color: #D54221;}
+
+/* foot */
+.power li {display:inline; padding: 0 10px;}
+	
+/**************************************
+other styles
+**************************************/
+
+
+
+

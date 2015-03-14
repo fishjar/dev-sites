@@ -1,0 +1,44 @@
+/**************************************
+common styles
+**************************************/
+body {height:100%;width:100%;overflow:hidden;}
+body {background:url(../images/index_bg.jpg) no-repeat center #666;background-size:cover;font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif,"Microsoft YaHei","微软雅黑";}
+a {text-decoration:none;color:#FFF;}
+
+.main {}
+.iemain {display:none;}
+.glue {width:100px;height:30px;position:absolute;left:125px;top:-12px;background:rgba(255,153,153,0.8);-ms-transform: rotate(7deg);-moz-transform: rotate(7deg);-o-transform: rotate(7deg);-webkit-transform: rotate(7deg);transform: rotate(7deg);box-shadow:0px 0px 5px #666;line-height:30px;text-align:center;color:#FFF;text-transform:uppercase;font-family: 'Economica', sans-serif;text-shadow: 2px 2px 2px #000;cursor:move;}
+.photo {position:absolute;left:50%;top:50%;margin-left:-380px;margin-top:-220px;}
+	.photo a, .photo img {display:block;width:240px;height:360px;}
+	.photo a {padding:20px;background:rgba(255,255,255,0.8);border-radius:8px;-ms-transform: rotate(10deg);-moz-transform: rotate(10deg);-o-transform: rotate(10deg);-webkit-transform: rotate(10deg);transform: rotate(10deg);box-shadow:2px 2px 20px #000;/* -webkit-transition:-webkit-transform 0.5s,width 1s,height 1s; */}
+	.photo a:focus,
+	.photo a:hover {background:rgba(255,255,255,1);}
+	.photo .glue {}
+.cont {position:absolute;left:50%;top:50%;margin-left:-20px;margin-top:-250px;}
+	.title {width:340px;padding:20px;background:rgba(0,0,0,0.8);color:#FFF;border-radius:5px;box-shadow:2px 2px 20px #000;}
+		.title:focus,
+		.title:hover {background:rgba(0,0,0,1)}
+		.title h1, .title h2 {font-family: 'Shadows Into Light Two', cursive;}
+		.title h1 {font-size: 24px;margin-bottom:5px;}
+		.title h2 {}
+		.title .glue {-ms-transform: rotate(5deg);-moz-transform: rotate(5deg);-o-transform: rotate(5deg);-webkit-transform: rotate(5deg);transform: rotate(5deg);top:-15px;}
+.card {position:absolute;left:50%;top:50%;margin-left:-20px;margin-top:-90px;}
+	.card a {display:block;width:140px;height:100px;padding:20px;background:rgba(255,0,0,0.8);color:#FFF;border-radius:5px;box-shadow:2px 2px 20px #000;-ms-transform: rotate(-5deg);-moz-transform: rotate(-5deg);-o-transform: rotate(-5deg);-webkit-transform: rotate(-5deg);transform: rotate(-5deg);font-family: 'Shadows Into Light Two', cursive;}
+	.card a:focus,
+	.card a:hover {background:rgba(255,0,0,1);}
+	.card .glue {width:80px;left:45px;top:-17px;-ms-transform:rotate(2deg);-moz-transform:rotate(2deg);-o-transform:rotate(2deg);-webkit-transform:rotate(2deg);transform:rotate(2deg);}
+	.blog {}
+	.twitter {margin-left:180px;}
+		.twitter a {background:rgba(0,128,0,0.8);}
+		.twitter a:focus,
+		.twitter a:hover {background:rgba(0,128,0,1);}
+	.album {margin-top:80px;}
+		.album a {background:rgba(0,0,128,0.8);}
+		.album a:focus,
+		.album a:hover {background:rgba(0,0,128,1);}
+	.music {margin-left:180px;margin-top:80px;}
+		.music a {background:rgba(255,153,0,0.8);}
+		.music a:focus,
+		.music a:hover {background:rgba(255,153,0,1);}
+.draggable-start {opacity:0.5}
+.front-layer {z-index:20;}

@@ -1,0 +1,22 @@
+/* CSS Document */
+body {
+	background-image: none;
+}
+#wrapper_bg {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+#wrapper_bg img {
+	position: absolute;
+}
+#main {
+	background: url(../images/bg_main.png) no-repeat center;
+}
+#content {
+	background: none;
+	border: none;
+	padding: 10px;
+}

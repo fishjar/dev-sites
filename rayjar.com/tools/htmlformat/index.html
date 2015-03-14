@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HTML/JS Format</title>
+<link type="text/css" href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="wrapper">
+		<form>
+			<div class="content">
+				<h2>HTML/JavaScript格式化工具</h2>
+			</div>
+			<div class="content">
+				<label>输入：</label><br />
+				<textarea class="code_area" id="code_in"></textarea>
+			</div>
+			<div class="content">
+				<select id="sel_tabsize">
+					<option value="1">1个制表符</option>
+					<option value="2">2个空格符</option>
+					<option value="4">4个空格符</option>
+					<option value="8">8个空格符</option>
+				</select>
+				<input type="button" id="btn_format" onclick="do_js_beautify()" value="格式化" />
+				<input type="button" id="btn_packn" onclick="pack_js(0)" value="普通压缩" />
+				<input type="button" id="btn_packs" onclick="pack_js(1)" value="加密压缩" />
+				<input type="button" id="btn_clean" onclick="Empty()" value="清空结果" />
+			</div>
+			<div class="content">
+				<label>输出：</label><br />
+				<textarea class="code_area" id="code_out"></textarea>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="base.js"></script>
+	<script type="text/javascript" src="htmlformat.js"></script>
+	<script type="text/javascript" src="jsformat.js"></script>
+	<script type="text/javascript" src="global.js"></script>
+</body>
+</html>

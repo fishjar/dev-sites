@@ -1,0 +1,471 @@
+/*
+Theme Name: Jisun Automation
+Theme URI: http://wwww.jisunauto.com/
+Description: The 2010 theme for WordPress.
+Author: Gaby Yuan
+Version: 1.0.1
+Tags: black, blue, white, two-columns, fixed-width
+*/
+
+/* reset */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li, pre,
+form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma, arial, sans-serif;
+	color: #666;
+}
+body {
+	line-height: 1.5;
+	border-top: 5px solid #066873;
+}
+:focus {
+	outline: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+	font-style: normal;
+	font-weight: normal;
+}
+fieldset, img {
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+sup, sub {
+	font-size: 100%;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #066873;
+}
+a:hover {
+	color: #D54121;
+}
+:link, :visited , ins {
+	text-decoration: none;
+}
+.clearb { height: 0; line-height: 0; font-size: 0; clear: both; }
+/* globa */
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+#header {
+	height: 150px;
+	width: 100%;
+	z-index: 50;
+}
+.logo {
+	height: 100px;
+}
+.nav {
+	height: 50px;
+	padding-left: 10px;
+}
+h1 {
+}
+h1 a {
+	width: 172px;
+	height: 0;
+	background: url(images/logo_01.png) no-repeat 0 0;
+	float: left;
+	padding-top: 90px;
+	overflow: hidden;
+}
+.language,
+.search {
+	float: right;
+}
+.language li,
+.nav li {
+	float: left;
+}
+.language li,
+.language li.active a {
+	color: #B3B3B3;
+}
+#main {
+	min-height: 400px;
+	width: 100%;
+	border-top: 1px solid #E5E5E5;
+	padding-bottom: 20px;
+	position: relative;
+}
+#footer {
+	border-top: 3px solid #E5E5E5;
+	width: 100%;
+	padding: 30px 0 50px;
+}
+.links {
+}
+.links li {
+	margin-right: 1em;
+	display: inline;
+}
+.copy {
+}
+.search {
+	margin-top: 18px;
+}
+.searchform label,
+.searchsubmit {
+	display: none;
+}
+.searchfield {
+	padding: 3px 5px;
+	border: 1px solid #E5E5E5;
+	width: 125px;
+	color: #B3B3B3;
+	line-height: 1;
+}
+.more {
+	padding-left: 15px;
+	padding-right: 5px;
+	background: url(images/ico_more.png) no-repeat 0 5px;
+}
+.link {
+	padding-left: 12px;
+	padding-right: 5px;
+	background: url(images/ico_link.png) no-repeat 0 5px;
+}
+input.active,
+textarea.active { background: #FFC }
+/* nav */
+.nav li {
+	width: 68px;
+	height: 50px;
+	background-image: url(images/nav.png);
+	background-repeat: no-repeat;
+	margin-right: 30px;
+	position: relative;
+	z-index: 50;
+}
+.nav li a {
+	display: block;
+	height: 0;
+	width: 68px;
+	padding-top: 50px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+.nav li.home { background-position: 0 0; }
+.nav li.home .fadingBG { background-position: 0 -50px; }
+.nav li.company { background-position: -68px 0; }
+.nav li.company .fadingBG { background-position: -68px -50px; }
+.nav li.products { background-position: -136px 0; }
+.nav li.products .fadingBG { background-position: -136px -50px; }
+.nav li.service { background-position: -204px 0; }
+.nav li.service .fadingBG { background-position: -204px -50px; }
+.nav li.downloads { background-position: -272px 0; }
+.nav li.downloads .fadingBG { background-position: -272px -50px; }
+.nav li.news { background-position: -340px 0; }
+.nav li.news .fadingBG { background-position: -340px -50px; }
+.nav li.contact { background-position: -408px 0; }
+.nav li.contact .fadingBG { background-position: -408px -50px; }
+.fadingBG {
+	background-image: url(images/nav.png);
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.active .fadingBG {
+	display: block;
+}
+.subnav {
+	width: 100px;
+	position: absolute;
+	top: 50px;
+	left: -10px;
+	background: #FFF;
+	border-bottom: 3px solid #E5E5E5;
+	display: none;
+}
+.subnav li {
+	width: 100px;
+	height: auto;
+	background: #FFF;
+	margin: 0;
+	border-top: 1px solid #E5E5E5;
+}
+.subnav li a {
+	font-size: 14px;
+	padding: 5px 10px;
+	width: 80px;
+	height: auto;
+	position: static;
+}
+.subnav li a:hover {
+	background: #F0F0F0;
+}
+/* ad */
+.ad {
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 30px;
+	position: relative;
+}
+.ad .pagination {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 20;
+}
+.ad .pagination li {
+	float: left;
+	margin-left: 10px;
+}
+.ad .pagination li a {
+	width: 20px;
+	height: 20px;
+	display: block;
+	text-align: center;
+	line-height: 20px;
+	overflow: hidden;
+	background: #DDD;
+	color: #666;
+}
+.ad .pagination li.current a,
+.ad .pagination li a:hover {
+	background: #D54121;
+	color: #FFF;
+}
+/* index */
+.indexbox {
+	margin-right: 310px;
+}
+.indexbox li {
+	float: left;
+	margin-right: 10px;
+}
+.indexbox li.box_1 a {
+	background-image: url(images/indexbox_1.png);
+}
+.indexbox li.box_2 a {
+	background-image: url(images/indexbox_2.png);
+}
+.indexbox li.box_3 a {
+	background-image: url(images/indexbox_3.png);
+}
+.indexbox li a {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	float: left;
+	height: 0;
+	width: 150px;
+	padding-top: 140px;
+	overflow: hidden;
+}
+.indexbox li.active a {
+	background-position: -150px 0;
+	width: 310px;
+}
+.indexnews {
+	width: 310px;
+	height: 139px;
+	float: right;
+	overflow: hidden;
+	border-top: 1px solid #E5E5E5;
+}
+.indexnews h4 {
+	height: 0;
+	padding-top: 30px;
+	overflow: hidden;
+	background: url(images/title_news.png) no-repeat 0 15px;
+}
+.indexnews li {
+	list-style: square inside;
+	color: #B3B3B3;
+}
+.indexnews li a {
+	color: #666;
+}
+.indexnews li a:hover {
+	text-decoration: underline;
+}
+.indexnews p {
+	text-align: right;
+}
+/* sider */
+#sider {
+	width: 180px;
+	float: left;
+	padding: 50px 0px 0 10px;
+	position: absolute;
+	left: 0;
+}
+#sider h3 {
+	color: #066873;
+	font-size: 16px;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #E5E5E5;
+}
+#sider li {
+	list-style: square inside;
+	border-bottom: 1px solid #E5E5E5;
+	color: #B3B3B3;
+	line-height: 2.5em;
+}
+#sider li a {
+	color: #666;
+}
+#sider li a:hover {
+	color: #D54121;
+	font-weight: bold;
+}
+#sider li.active,
+#sider li.active a {
+	color: #066873;
+	font-weight: bold;
+}
+/* container */
+.container {
+	margin-left: 250px;
+}
+.content {
+	padding: 30px 0 10px;
+	width: 100%;
+}
+.titleimage {
+	padding-bottom: 20px;
+	width: 100%;
+	line-height: 1;
+}
+.post {
+	width: 100%;
+}
+.post h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+	color: #066873;
+}
+/* postsider */
+.postsider {
+	float: right;
+	width: 210px;
+}
+.siderbox {
+	padding: 14px;
+	border: 1px solid #E5E5E5;
+	margin-bottom: 20px;
+}
+.siderbox h4 {
+	font-size: 14px;
+	margin-bottom: 0.5em;
+	color: #066873;
+}
+/* entry */
+.entry {
+	padding-bottom: 20px;
+	margin-right: 230px;
+}
+.entry p,
+.entry ul,
+.parameter {
+	margin-bottom: 1em;
+}
+.entry li {
+	list-style: disc outside;
+	margin-left: 1.5em;
+}
+.entry img {
+	border: 1px solid #E5E5E5;
+	padding: 9px;
+}
+.entry a:hover img {
+	border: 1px solid #B3B3B3;
+}
+.emphasis {
+	font-size: 14px;
+	color: #066873;
+}
+.parameter {
+	width: 100%;
+}
+.parameter td {
+	border: 1px solid #E5E5E5;
+	padding: 0.1em 0.5em;
+}
+.entry h4 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	color: #066873;
+}
+.entry ul.productlist {
+	margin-bottom: 0;
+}
+.productlist li {
+	list-style: none;
+	margin: 0 0 10px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.thumbnai {
+	float: left;
+	width: 100px;
+}
+.thumbnai img {
+	padding: 4px;
+	width: 90px;
+	height: 90px;
+	display: block;
+}
+.summary {
+	margin-left: 115px;
+}
+.newslist .summary {
+	margin-left: 0;
+}
+/* comments */
+.comments {
+	margin-right: 230px;
+	padding: 10px 0 20px;
+	border-top: 1px solid #E5E5E5;
+}
+.comment-meta {
+	float: right;
+}
+.comment-author {
+	font-weight: bold;
+}
+.comment {
+	margin-bottom: 1em;
+}
+#commentform p {
+	margin-bottom: 0.5em;
+}
+#commentform input {
+	margin-right: 0.5em;
+}
+#commentform textarea {
+	width: 470px;
+	height: 6em;
+	overflow: auto;
+}
+#commentform input,
+#commentform textarea {
+	padding: 2px 4px;
+	border: 1px solid #E5E5E5;
+	line-height: 1;
+}
+#commentform input#submit {
+	cursor: pointer;
+	height: 2em;
+}
+.required {
+	color: red;
+}

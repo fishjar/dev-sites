@@ -1,0 +1,269 @@
+/* CSS Document */
+html {
+	height: 100%;
+}
+#conash3D0 {
+	display: none;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li, pre, code, div,
+form, fieldset, legend, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100%;
+	overflow: hidden;
+	background-color: honeydew;
+	/* background-image: url(../images/bg_body.jpg); */
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	color: #333;
+}
+ul, ol {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: bold;
+}
+fieldset, img {
+	border: 0;
+}
+#wrapper {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background: url(../images/bg_wrapper.gif) no-repeat 0 0;
+}
+#nav {
+	text-align: right;
+	padding-right: 20px;
+}
+.ackey {
+	font-weight: bold;
+}
+#mylinks li {
+	display: inline;
+}
+#mylinks li a {
+	color: #999;
+	font-size: 75%;
+	padding: 0.25%;
+	background: #000;
+	filter:alpha(opacity=40);
+	-moz-opacity:.40;
+	opacity:.40;
+}
+#mysites .ackey {
+	text-decoration: underline;
+	color: #D54221;
+}
+#mylinks .ackey {
+	color: #CCC;
+}
+#mylinks li a.onfocus,
+#mylinks li a:hover {
+	filter:alpha(opacity=80);
+	-moz-opacity:.80;
+	opacity:.80;
+}
+#main {
+	width: 370px;
+	height: 250px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -140px;
+	padding: 15px;
+	z-index: 2;
+}
+#content {
+	height: 230px;
+	padding: 9px;
+	background-color: ivory;
+	border: 1px solid #CCC;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 40px rgba(19, 83, 85, 0.25) inset;
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 40px rgba(19, 83, 85, 0.25) inset; 
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 40px rgba(19, 83, 85, 0.25) inset;
+	position: relative;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	cursor: move;
+}
+
+#content:before {
+	-webkit-transform: skew(-15deg) rotate(-4deg);
+	-moz-transform: skew(-15deg) rotate(-4deg);
+	transform: skew(-15deg) rotate(-4deg);
+	left: 14px;
+}
+#content:after {
+	-webkit-transform: skew(15deg) rotate(4deg);
+	-moz-transform: skew(15deg) rotate(4deg);
+	transform: skew(15deg) rotate(4deg);
+	right: 14px;
+}
+
+#content:before, #content:after {
+	width: 50%;
+	height: 50%;
+	content: '';
+
+	-webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3); 
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+	position: absolute;
+	bottom: 7px;
+	z-index: -1;
+	
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#siteinfo {
+	height: 140px;
+	padding: 10px;
+	overflow: hidden;
+	position: relative;
+	background: url(../images/ico_me.png) no-repeat 235px -5px;
+}
+h1 {
+	font-family: "Covered By Your Grace";
+	font-size: 200%;
+	text-shadow: 2px 2px 2px #999;
+}
+#faith {
+	line-height: 125%;
+	position: absolute;
+	bottom: 5px;
+	font-family: "Covered By Your Grace";
+	font-size: 125%;
+	text-shadow: 1px 1px 1px #999;
+}
+#mysites {
+	float: left;
+}
+#mysites li {
+	float: left;
+	margin: 9px;
+	display: inline;
+	position: relative;
+}
+#mysites li a {
+	display: block;
+	width: 50px;
+	height: 0;
+	padding-top: 50px;
+	border: 1px solid #CCC;
+	-webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 0 0 25px rgba(19, 83, 85, 0.5) inset;
+	-moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 0 0 25px rgba(19, 83, 85, 0.5) inset; 
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 0 0 25px rgba(19, 83, 85, 0.5) inset;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: url(../images/ico_sites.png) no-repeat;
+}
+#mysites li a.active,
+#mysites li a.sitelink:hover {
+	border: 1px solid #DDD;
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(19, 83, 85, 0.05) inset;
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(19, 83, 85, 0.05) inset; 
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(19, 83, 85, 0.05) inset;
+}
+#mysites li.blog a.sitelink {
+	background-position: -5px -5px;
+}
+#mysites li.twitter a.sitelink {
+	background-position: -65px -5px;
+}
+#mysites li.album a.sitelink {
+	background-position: -125px -5px;
+}
+#mysites li.music a.sitelink {
+	background-position: -185px -5px;
+}
+#mysites li.reader a.sitelink {
+	background-position: -245px -5px;
+}
+#mysites li.blog a.active,
+#mysites li.blog a.sitelink:hover {
+	background-position: -5px -65px;
+}
+#mysites li.twitter a.active,
+#mysites li.twitter a.sitelink:hover {
+	background-position: -65px -65px;
+}
+#mysites li.album a.active,
+#mysites li.album a.sitelink:hover {
+	background-position: -125px -65px;
+}
+#mysites li.music a.active,
+#mysites li.music a.sitelink:hover {
+	background-position: -185px -65px;
+}
+#mysites li.reader a.active,
+#mysites li.reader a.sitelink:hover {
+	background-position: -245px -65px;
+}
+.sitearrow {
+	width: 52px;
+	position: absolute;
+	left: 0px;
+	top: -30px;
+	font-size: 175%;
+	color: #999;
+	display: none;
+	text-align: center;
+}
+.sitenotice {
+	width: 310px;
+	border: 1px solid #CCC;
+	padding: 9px;
+	position: absolute;
+	bottom: 72px;
+	font-size: 80%;
+	background: #FFF;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(19, 83, 85, 0.15) inset;
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(19, 83, 85, 0.15) inset; 
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(19, 83, 85, 0.15) inset;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	display: none;
+}
+.blog .sitenotice {
+	left: 0px;
+}
+.twitter .sitenotice {
+	left: -70px;
+}
+.album .sitenotice {
+	left: -140px;
+}
+.music .sitenotice {
+	left: -210px;
+}
+.reader .sitenotice {
+	left: -280px;
+}
+#mysites li.onfocus .sitearrow,
+#mysites li.onfocus .sitenotice,
+#mysites li.onhover .sitearrow,
+#mysites li.onhover .sitenotice,
+#mysites li:hover .sitearrow,
+#mysites li:hover .sitenotice {
+	display: block;
+}

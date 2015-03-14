@@ -1,0 +1,253 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fu",
+				"function"
+			],
+			[
+				"jq",
+				"jQuery.each	jQuery.each"
+			],
+			[
+				"pa",
+				"play"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"li",
+				"LI"
+			],
+			[
+				"l",
+				"li"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 380.0,
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"tag",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"fo",
+				"Format: Javascript"
+			],
+			[
+				"Format: Javascript",
+				"Format: Javascript"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ze",
+				"Set Syntax: ZenCoding"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: l",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Jisun/Desktop/sublime_text.exe",
+		"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_1.01/WP/page.php",
+		"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_2.0/HTML/js/ie6.js",
+		"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_2.0/HTML/js/global.js",
+		"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_1.01/WP/comments.php",
+		"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_2.0/HTML/css/default.css",
+		"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_1.01/WP/js/jisun.min.js",
+		"/C/Users/Jisun/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_1.01/WP/js/jisun.js",
+		"/C/Users/Jisun/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/C/Users/Jisun/AppData/Roaming/Sublime Text 2/Packages/Tag/Tag Package.sublime-settings",
+		"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_2.0/HTML/home.html",
+		"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_1.01/WP/index.php",
+		"/C/Users/Jisun/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Jisun/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/Jisun/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Jisun/AppData/Roaming/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Users/Jisun/AppData/Roaming/Sublime Text 2/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/Jisun/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/zen-coding.sublime-settings",
+		"/G/svn/fishjar/demos/demo_01/index.html",
+		"/E/网站/代码/weblukerverif.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"3342",
+			"a",
+			"法律信息",
+			">\n",
+			"a",
+			"input",
+			"search",
+			"class",
+			"span",
+			"html"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"3242"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_1.01/WP/index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/G/svn/fishjar/sites/jisunauto.com/jisunauto.com_2.0/HTML/jisunauto_project_2.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 287.0,
+	"status_bar_visible": true
+}
