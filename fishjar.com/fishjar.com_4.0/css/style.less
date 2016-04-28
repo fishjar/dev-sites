@@ -1,0 +1,290 @@
+/* Useful CSS3 LESS Mixins */
+.opacity(@opacity: 0.5) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+  filter: ~"alpha(opacity=@{opperc})";
+}
+.backTtansparent(@color;@alpha){
+	@background: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+	@ieAlpha:argb(@background);
+	background: @color;
+	background: @background;
+	/* background: transparent/9; */
+	zoom: 1;
+	filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlpha}, endColorstr=@{ieAlpha})";
+	-ms-filter: ~'"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlpha}, endColorstr=@{ieAlpha})"';
+}
+/*  */
+:root {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  color: #DDD;
+  background-color: #000;
+}
+@link-color: #EEE;
+@link-color-hover: #FFF;
+/* a, .link {
+  color: @link-color;
+}
+a:hover {
+  color: @link-color-hover;
+} */
+button {
+	font-size: 0.875rem;
+	// All the internal/external value use in 'em'
+	// This value use of your "font-size" as the basic font size
+	// And you will not have any problem with the font size of the container ( Example bottom )
+	padding: .5em 1em;
+	border: .125em solid #e3e3e3;
+	@media (min-width: 48rem){ // min-width: 768px
+		font-size: 1.125rem;
+	}
+	@media (min-width: 62rem){ // min-width: 992px
+		font-size: 1.375rem;
+	}
+}
+/* nav styles */
+#nav {
+	.backTtansparent(#222;0.2);
+	border-color: transparent;
+
+}
+.container {
+	
+}
+.section, .slide {
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+}
+#section1 {
+	background-image: url(../img/bg1.jpg);
+}
+#section2 {
+	background-image: url(../img/bg2.jpg);
+}
+#section3 {
+	background-image: url(../img/bg3.jpg);
+}
+#section4 {
+	background-image: url(../img/bg4.jpg);
+}
+#section1 .col {
+	padding: 15px;
+}
+#section2 .col {
+  padding: 10px;
+  opacity: 0;
+}
+#section2 .thumbnail {
+  padding: 2px;
+  box-shadow: 0px 2px 15px rgba(0,0,0,.5);
+  margin: 0;
+  transition: all 0.5s;
+}
+#section2 .thumbnail:hover {
+  transform: scale(1.2);
+}
+#section2 .thumbnail img {
+  width: 100%;
+}
+.flyready {
+  // opacity: 0;
+}
+.fly {
+  animation-name: cssfly;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+@keyframes cssfly {
+  from {
+     transform: translate(1000px,1000px) rotate(360deg) scale(10);
+  }
+  
+  to {
+    opacity: 1;
+ }
+}
+.card {
+	/* background: blue; */
+	position:relative;
+	transition: all 0.5s;
+}
+.card:hover {
+	transform: scale(1.2);
+}
+.note {
+  padding: 1.5em;
+  display: block;
+  box-shadow: 0px 2px 15px rgba(0,0,0,.5);
+  transform: rotate(-3deg);
+  color: #FFF;
+  text-decoration: none;
+  transition: all 1s;
+}
+.note:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+.glue {
+	height: 2em;
+	line-height: 2em;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-top: -1em;
+	.backTtansparent(rgb(255,153,153);0.8);
+  box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+  transform: rotate(2deg);
+  text-shadow: 1px 2px 3px #000;
+  transition: all 0.5s ease-in;
+}
+#card1 .note-gabe, #card1 .glue {
+	/* display: none; */
+}
+#card1 .note-gabe {
+	border-radius: 0.5em;
+}
+#card1 .note-gabe img {
+	width: 100%;
+}
+#card1 .note-brand {
+	display: inline;
+  padding: 0;
+}
+#card1 .note-brand img {
+  /* width: 80px;
+  height: 80px; */
+}
+#card1 .glue, #card2 .glue {
+	width: 7em;
+	margin-left: -3.5em;
+}
+#card3 .glue, #card4 .glue, #card5 .glue, #card6 .glue {
+	width: 5em;
+	margin-left: -2.5em;
+}
+#card1 .note {
+	.backTtansparent(#FFF;0.8);
+	transform: rotate(3deg);
+}
+#card2 .note {
+	.backTtansparent(#000;0.8);
+	transform: rotate(0);
+}
+#card3 .note {
+	.backTtansparent(#428bca;0.8);
+}
+#card4 .note {
+	.backTtansparent(#5cb85c;0.8);
+}
+#card5 .note {
+	.backTtansparent(#f0ad4e;0.8);
+}
+#card6 .note {
+	.backTtansparent(#d9534f;0.8);
+}
+#card1 .note:hover {
+	.backTtansparent(#FFF;1);
+}
+#card2 .note:hover {
+	.backTtansparent(#000;1);
+}
+#card3 .note:hover {
+	.backTtansparent(#428bca;1);
+}
+#card4 .note:hover {
+	.backTtansparent(#5cb85c;1);
+}
+#card5 .note:hover {
+	.backTtansparent(#f0ad4e;1);
+}
+#card6 .note:hover {
+	.backTtansparent(#d9534f;1);
+}
+#card2 h3 {
+  margin: 10px 0;
+}
+#card2 p  {
+  margin-bottom: 0;
+}
+
+.glyphicon-refresh-animate {
+  -animation: spin .7s infinite linear;
+  -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+  from { -webkit-transform: rotate(0deg);}
+  to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+  from { transform: scale(1) rotate(0deg);}
+  to { transform: scale(1) rotate(360deg);}
+}
+
+#section3 .row {
+  
+}
+
+/* 小屏幕（平板，大于等于 360px） */
+@media (min-width: 360px) {
+	.container {
+		width: 360px;
+	}
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+	.container {
+		width: 720px;
+	}
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}
+.blind {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.blind-top,
+.blind-bottom {
+  height: 50%;
+  background: #000;
+  z-index: 1500;
+}
+.blind-top {
+  top: 0;
+}
+.blind-bottom {
+  bottom: 0;
+}
+.jumbotron {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  background: none;
+  text-align: center;
+  z-index: 1501;
+  margin-top: -25px;
+}
+
