@@ -1,0 +1,491 @@
+/* CSS Document */
+
+#conash3D0 {
+	display: none;
+}
+/* reset */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li, pre, code, div,
+form, fieldset, legend, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+}
+body, button, input, select, textarea {
+	font: 12px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; 
+}
+code, kbd, pre, samp {
+	font-family: courier new, courier, monospace;
+}
+ul, ol {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: bold;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 160%;
+}
+h3 {
+	font-size: 130%;
+}
+a {
+	text-decoration: none;
+}
+fieldset, img {
+	border: 0;
+}
+button, input, select, textarea {
+	font-size: 100%;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	zoom: 1;
+}
+
+/* global header */
+#globalheader {
+	padding: 0.3em 0;
+	border-bottom: 1px solid;
+}
+#gh_content {
+	width: 1003px;
+	margin: 0 auto;
+}
+#gh_theme {
+	float: right;
+}
+.theme_list {
+	float: left;
+}
+.theme_list li {
+	float: left;
+}
+.theme_item {
+	margin-left: 5px;
+}
+.theme_item span {
+	width: 15px;
+	height: 0;
+	padding-top: 15px;
+	display: block;
+	overflow: hidden;
+	border: 1px solid;
+	cursor: pointer;
+}
+.theme_item span:hover,
+.theme_list li.active span {
+	border: 1px solid;
+}
+
+/* header */
+#header {
+	width: 1003px;
+	margin: 0 auto;
+	padding: 2em 0;
+}
+#hd_title {
+	border: 1px solid;
+	padding: 1em;
+	text-align: center;
+}
+
+/* contenter */
+#container {
+	width: 1003px;
+	margin: 0 auto;
+	padding-bottom: 2em;
+}
+
+/* copy */
+h1 {
+	text-transform: uppercase;
+}
+h1, h2 {
+	margin-bottom: 0.5em;
+}
+h3,
+.album_intro p,
+.photo_intro p {
+	margin-bottom: 1em;
+}
+
+/* index */
+.album_view {
+	min-height: 480px;
+}
+.album_list {
+	padding-left: 1px;
+}
+.album_item {
+	padding: 1em 5px;
+	float: left;
+}
+.album_item a {
+	display: block;
+	position: relative;
+	margin-left: 1px;
+}
+.album_item a img {
+	width: 160px;
+	height: 160px;
+	display: block;
+	padding: 13px;
+	border-style: solid;
+	border-width: 1px 2px 2px 1px;
+}
+.album_item a span {
+	display: block;
+	width: 189px;
+	text-align: center;
+}
+.album_item a:hover img {
+	width: 166px;
+	height: 166px;
+	padding: 10px;
+}
+
+/* album */
+.album_intro {
+	padding-bottom: 0.5em;
+}
+/* photo preview */
+.photo_preview {
+	display: none;
+	padding: 9px 10px;
+	border: 1px solid;
+	margin-bottom: 1em;
+}
+.leftarrow,
+.rightarrow {
+	width: 15px;
+	height: 76px;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	line-height: 76px;
+	overflow: hidden;
+	font-weight: bold;
+}
+.leftarrow {
+	float: left;
+}
+.rightarrow {
+	float: right;
+}
+.prevarrow,
+.nextarrow {
+	cursor: pointer;
+}
+.photo_window {
+	width: 929px;
+	height: 78px;
+	position: relative;
+	overflow: hidden;
+	left: 9px;
+}
+.photo_bar {
+	height: 78px;
+	position: relative;
+}
+.photo_bar li {
+	line-height: 1em;
+	float: left;
+	padding: 1px;
+	margin-right: 7px;
+	position: relative;
+}
+.photo_bar li img {
+	padding: 1px;
+	cursor: pointer;
+	width: 74px;
+	height: 74px;
+	display: block;
+}
+.photo_bar li span {
+	position: absolute;
+	top: 60px;
+	left: 2px;
+	padding: 0 2px;
+	height: 16px;
+	line-height: 16px;
+}
+.photo_bar li:hover,
+.photo_bar li.active {
+	padding: 0;
+}
+.photo_bar li:hover img {
+	width: 76px;
+	height: 76px;
+}
+.photo_bar li.active img {
+	padding: 2px;
+	width: 74px;
+	height: 74px;
+}
+
+/* photos view */
+.photo_view {
+	min-height: 240px;
+}
+.photo_list {
+	
+}
+.photo_item {
+	text-align: center;
+	width: 1003px;
+	position: absolute;
+	display: none;
+}
+.photo_show {
+	padding-bottom: 1em;
+}
+.photo_show img {
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px 2px 2px 1px;
+	display: inline-block;
+}
+.photo_intro {
+	padding-bottom: 1em;
+}
+
+/* album comment */
+.album_comment {
+	padding-bottom: 2em;
+}
+
+/* footer */
+#footer {
+	border-top: 1px solid;
+	padding: 1em 0 2em;
+	text-align: center;
+}
+#ft_menu {
+	padding: 0.3em 0;
+}
+#ft_menu li {
+	display: inline;
+	padding: 0 0.5em;
+}
+
+/* photo load */
+/* none javascript */
+.photo_load,
+.nonejs {
+	width: 1003px;
+	position: absolute;
+	text-align: center;
+	z-index: 100;
+	padding-top: 80px;
+	background: url(images/loading-img_0.gif) no-repeat center top;
+}
+/* themes */
+.theme_1_btn {
+	background: oldlace;
+}
+.theme_2_btn {
+	background: #000;
+}
+.theme_3_btn {
+	background: #FFF;
+}
+.theme_4_btn {
+	background: #FFF;
+}
+/* theme 1 */
+#theme_1 {
+	background-color: #FFF;
+}
+#theme_1, #theme_1 button, #theme_1 input, #theme_1 select, #theme_1 textarea {
+	color: #333;
+}
+#theme_1 a {
+	color: #36C;
+}
+#theme_1 a:hover {
+	color: #FF4500;
+}
+#theme_1 #main {
+	background: #FDF5E6;
+}
+#theme_1 #globalheader {
+	border-bottom-color: #CCC;
+}
+#theme_1 #gh_content {
+	color: #666;
+}
+#theme_1 .theme_item span {
+	border-color: #CCC;
+}
+#theme_1 .theme_item span:hover,
+#theme_1 .theme_list li.active span {
+	border-color: #FF4500;
+}
+#theme_1 #hd_title {
+	border-color: #CCC;
+	background: #FFF;
+}
+#theme_1 .album_item a img {
+	background: #FFF;
+	border-color: #CCC #BBB #888;
+}
+#theme_1 .photo_preview {
+	border-color: #CCC;
+	background: #FFF;
+}
+#theme_1 .leftarrow,
+#theme_1 .rightarrow {
+	border-color: #DDD;
+	color: #DDD;
+}
+#theme_1 .prevarrow,
+#theme_1 .nextarrow {
+	background: #FDF5E6;
+	color: #999;
+	border-color: #CCC;
+}
+#theme_1 .prevarrow:hover,
+#theme_1 .nextarrow:hover {
+	border-color: #FF4500;
+	color: #FF4500;
+}
+#theme_1 .photo_bar li img {
+	background: #CCC;
+}
+#theme_1 .photo_bar li span {
+	background: #FDF5E6;
+	color: #666;
+}
+#theme_1 .photo_bar li:hover img,
+#theme_1 .photo_bar li.active img {
+	background: #FF4500;
+}
+#theme_1 .photo_bar li:hover span,
+#theme_1 .photo_bar li.active span {
+	background: #000;
+	color: #FFF;
+}
+#theme_1 .photo_show img {
+	background: #FFF;
+	border-color: #CCC #BBB #888;
+}
+#theme_1 #footer {
+	border-top-color: #CCC;
+	color: #666;
+}
+#theme_1 .photo_load {
+	background-image: url(images/loading-img_1.gif);
+}
+
+/* theme 2 */
+#theme_2 {
+	background-color: #333;
+}
+#theme_2, #theme_2 button, #theme_2 input, #theme_2 select, #theme_2 textarea {
+	color: #DDD;
+}
+#theme_2 a {
+	color: #999;
+}
+#theme_2 a:hover {
+	color: #FF4500;
+}
+#theme_2 #main {
+	background: #000;
+}
+#theme_2 #globalheader {
+	border-bottom-color: #999;
+}
+#theme_2 #gh_content {
+	color: #666;
+}
+#theme_2 .theme_item span {
+	border-color: #999;
+}
+#theme_2 .theme_item span:hover,
+#theme_2 .theme_list li.active span {
+	border-color: #FF4500;
+}
+#theme_2 #hd_title {
+	border-color: #999;
+	background: #333;
+}
+#theme_2 .album_item a img {
+	background: #333;
+	border-color: #666;
+}
+#theme_2 .album_item a:hover img {
+	border-color: #999;
+}
+#theme_2 .photo_preview {
+	border-color: #999;
+	background: #333;
+}
+#theme_2 .leftarrow,
+#theme_2 .rightarrow {
+	border-color: #666;
+	color: #666;
+}
+#theme_2 .prevarrow,
+#theme_2 .nextarrow {
+	background: #666;
+	color: #FFF;
+	border-color: #999;
+}
+#theme_2 .prevarrow:hover,
+#theme_2 .nextarrow:hover {
+	border-color: #FF4500;
+	color: #FF4500;
+}
+#theme_2 .photo_bar li img {
+	background: #CCC;
+}
+#theme_2 .photo_bar li span {
+	background: #333;
+	color: #999;
+}
+#theme_2 .photo_bar li:hover img,
+#theme_2 .photo_bar li.active img {
+	background: #FF4500;
+}
+#theme_2 .photo_bar li:hover span,
+#theme_2 .photo_bar li.active span {
+	background: #DDD;
+	color: #000;
+}
+#theme_2 .photo_show img {
+	background: #FFF;
+	border-color: #333;
+}
+#theme_2 #footer {
+	border-top-color: #999;
+	color: #666;
+}
+#theme_2 .photo_load {
+	background-image: url(images/loading-img_2.gif);
+}
+/* theme 3 */
+#theme_3 .theme_item span {
+	border-color: #CCC;
+}
+#theme_3 .theme_item span:hover,
+#theme_3 .theme_list li.active span {
+	border-color: #FF4500;
+}
+
+
+

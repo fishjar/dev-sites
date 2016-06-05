@@ -1,0 +1,360 @@
+@charset "utf-8";
+/*
+Theme Name: Line
+Theme URI: http://www.fishjar.com/
+Description: The 2010 theme
+Author: Gaby Yuan
+Version: 1.5
+Tags: black
+*/
+
+body { background: #6e6e6e url(images/body_bg.gif) top repeat-x;font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif; line-height:1.5;}
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input { margin: 0; padding: 0; }
+a {
+	text-decoration: none;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 16px;
+}
+#main {
+	min-height: 500px;
+	width: 857px;
+	margin: 0 auto;
+	clear: both;
+}
+#footer {
+	height: 55px;
+	padding-top: 4px;
+	background: url(images/footer_bg.gif) repeat-x;
+	margin-top: 11px;
+	color: #fff;
+	text-align: center;
+}
+#header {
+	height: 117px;
+}
+#nav {
+	height: 46px;
+	margin-top: 11px;
+}
+#nav ul, #con_menu ul, ul.pro_list_pic, .mag_show ul {
+	list-style-type: none;
+}
+#nav li {
+	display: inline;
+}
+#nav a {
+	background: url(images/nav.gif) no-repeat scroll 0 0;
+	float: left;
+	height: 0;
+	overflow: hidden;
+	padding-top: 46px;
+	width: 143px;
+}
+#nav #nv_contact a {
+	width: 142px !important;
+}
+#nv_index a {	background-position: 0 0;}
+#nv_about a {	background-position: -143px 0;}
+#nv_product a {	background-position: -287px 0;}
+#nv_news a {	background-position: -430px 0;}
+#nv_support a {	background-position: -573px 0;}
+#nv_contact a {	background-position: -716px 0;}
+
+#nv_index a:hover {	background-position: 0 -46px;}
+#nv_about a:hover {	background-position: -143px -46px;}
+#nv_product a:hover {	background-position: -287px -46px;}
+#nv_news a:hover {	background-position: -430px -46px;}
+#nv_support a:hover {	background-position: -573px -46px;}
+#nv_contact a:hover {	background-position: -716px -46px;}
+
+.index #nv_index a {	background-position: 0 -46px !important;}
+.about #nv_about a {	background-position: -143px -46px !important;}
+.product #nv_product a {	background-position: -287px -46px !important;}
+.news #nv_news a {	background-position: -430px -46px !important;}
+.support #nv_support a {	background-position: -573px -46px !important;}
+.contact #nv_contact a {	background-position: -716px -46px !important;}
+
+#container {
+	min-height: 300px;
+	margin-top: 1px;
+	background: url(images/con_bg.gif) repeat-x;
+	padding: 10px 0;
+}
+#ads {
+	height: 129px;
+	background: url(images/ad_bg.jpg) no-repeat;
+	clear: both;
+}
+#search_div {
+	width: 228px;
+	height: 46px;
+	float: right;
+	background: url(images/search_bg.gif) no-repeat;
+	position: relative;
+	top: 71px;
+}
+#logo {
+	padding-top: 26px;
+}
+#logo h1 a {
+	background: url(images/logo_1.gif) no-repeat 0 0;
+	float: left;
+	color: #FFCC00;
+	font-size: 28px;
+	padding: 30px 0 10px 180px;
+}
+#logo h1 a:hover {
+	color: #F7FF0D;
+}
+#con_menu {
+	width: 105px;
+	padding: 4px 0;
+	float: left;
+}
+#con_menu ul {
+	border: 1px solid #2b2b2b;
+	border-right: none !important;
+}
+#con_menu ul li {
+	display: inline;
+}
+#con_menu ul li a {
+	width: 84px;
+	padding-left: 20px;
+	height: 29px;
+	padding-top: 10px;
+	display: block;
+	background: url(images/sub_nav.gif) no-repeat bottom;
+	margin: 5px 0;
+	color: #000;
+}
+#con_menu ul li a:hover, #con_menu ul li a.active {
+	background: url(images/sub_nav.gif) no-repeat top;
+	color: #F7FF0D;
+}
+#con_box {
+	width: 711px;
+	border-left: 1px solid #CD8B1B;
+	float: left;
+	background: #2B2B2B url(images/con_box_bg.gif) no-repeat left top;
+	border-bottom: 4px solid #CD8B1B;
+	padding: 20px;
+	margin-bottom: 5px;
+}
+.post {
+	font-size: 12px;
+	color: #999;
+	clear: both;
+}
+.post h2 {
+	color: #ffcc00;
+}
+.post h2, .entry p {
+	margin-bottom: 1em;
+}
+.entry {
+	clear: both;
+	min-height: 280px;
+	height: auto !important; 
+	height: 280px;
+}
+.entry a{
+	color: #999;
+	text-decoration: underline;
+}
+.entry a:hover {
+	color: #FFCC00;
+}
+ul.pro_list_pic {
+	clear: both;
+}
+ul.pro_list_pic li {
+
+	height: 251px;
+	float: left;
+	padding-right: 5px;
+	display: inline-block;
+
+	overflow: hidden;
+}
+ul.pro_list_pic img {
+	border: 1px solid #666;
+	width: 340px;
+	height: 191px;
+	padding: 4px;
+}
+ul.pro_list_pic a, ul.pro_list_txt a {
+	text-decoration: none;
+}
+ul.pro_list_pic a:hover img {
+	border: 1px solid #fc0;
+}
+ul.pro_list_txt {
+	margin-left: 2em;
+}
+ul.pro_list_txt li {
+	margin-bottom: 0.5em;
+}
+.pro_show_pic {
+	width: 350px;
+	min-height: 200px;
+	float: right;
+}
+.pro_titlepic img {
+	padding: 4px;
+	border: 1px solid #666;
+}
+.pro_show_txt {
+	width: 350px;
+	min-height: 400px;
+}
+ul.pro_piclist {
+	list-style-type: none;
+	margin-top: 6px;
+}
+ul.pro_piclist a {
+
+
+
+
+
+
+}
+ul.pro_piclist img {
+	width: 340px;
+	height: 191px;
+	padding: 4px;
+	border: 1px solid #666;
+}
+ul.pro_piclist a:hover img {
+	border: 1px solid #fc0;
+}
+ul.pro_piclist li {
+	padding-bottom: 10px;
+}
+.pro_show_txt h3 {
+	margin-top: 2em;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #fc0;
+	border-left: 10px solid #fc0;
+	line-height: 16px;
+}
+.pro_show_txt ul {
+	margin-left: 1.5em;
+}
+.pro_show_txt ul li {
+	margin: 0.5em 0;
+}
+.mag_show {
+	clear: both;
+}
+.mag_show ul li {
+	display: inline;
+}
+.mag_show ul img {
+	width: 340px;
+	height: 460px;
+	padding: 4px;
+	border: 1px solid #666;
+}
+.mag_show ul a:hover img {
+	border: 1px solid #fc0;
+}
+.postcomm {
+	clear: both;
+	margin: 1em 0;
+}
+#commentform p, .postcomm h3 {
+	padding-bottom: 0.5em;
+}
+#commentform input, #commentform textarea {
+	border: 1px solid #000;
+	background: #6E6E6E;
+	padding: 3px;
+}
+#submit {
+	cursor: pointer;
+}
+.commentlist {
+	list-style-type: none;
+}
+.commentlist a {
+	color: #999;
+}
+.commentlist a:hover {
+	color: #fc0;
+}
+.commentlist .photo {
+	float: right;
+}
+.comment-meta {
+	font-size: small;
+}
+.wp-pagenavi {
+	margin: 1em 0;
+	text-align: right;
+}
+.wp-pagenavi a {
+	color: #999;
+}
+.wp-pagenavi a:hover {
+	color: #fc0;
+}
+.search-wrapper input {
+	background: none;
+	border: none;
+}
+.search-wrapper #search {
+	width: 140px;
+	float: left;
+	margin-top: 22px;
+	margin-left: 8px;
+	color: #000;
+}
+.search-wrapper #searchsubmit {
+	width: 50px;
+	cursor: pointer;
+	float: right;
+	height: 40px;
+	margin-right: 16px;
+}
+
+#rundiv {
+	width: 710px;
+	height: 280px;
+	overflow: hidden;
+}
+#run1 {
+	width: 2130px;
+	height: 260px;
+	padding-top: 20px;
+}
+#run2 {
+	width: 2130px;
+	height: 260px;
+	padding-top: 20px;
+}
+#post-26 {
+	min-height: 0;
+	height: auto !important; 
+	height: auto;
+}
+
+.overnote {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	color: #FFF;
+	text-align: center;
+	font-size: 2em;
+	line-height: 10em;
+}

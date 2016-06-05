@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine On
+#RewriteRule ^(.*)\.html$ index.html?userid=$1
+#RewriteRule ^p/([^/]+)/([^/]+)$ index.html?userid=$1&albumid=$2 [NC]
